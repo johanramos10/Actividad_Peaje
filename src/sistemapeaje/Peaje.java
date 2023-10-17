@@ -23,7 +23,7 @@ public class Peaje {
     ubicada la estación de peaje */
     String departamento;
     /* Atributo que identifica el conjunto de vehículos que llega a la estación de peaje */
-    Vector vehiculos;
+    Vector<Vehiculo> vehiculos;
     /* Atributo que identifica el total de dinero recolectado por la estación de peaje */
     int totalPeaje = 0;
     /* Atributo que identifica el total de camiones que llegó a la estación de peaje */

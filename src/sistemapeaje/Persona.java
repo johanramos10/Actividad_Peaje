@@ -18,7 +18,7 @@ public class Persona {
     String apellido;
     String  documento;
     Date fechaNacimiento;
-    public List vehiculos;
+    public List<Vehiculo> vehiculos;
 
     public Persona(String nombre, String apellido, String documento, Date fechaNacimiento) {
         this.nombre = nombre;
@@ -29,27 +29,26 @@ public class Persona {
     }
     
     public void asignarVehiculo(Vehiculo vehiculo){
-        vehiculos.add(vehiculos);
+        vehiculos.add(vehiculo);
     }
     
     public void desasignarVehiculo(Vehiculo vehiculo){
-        vehiculos.remove(vehiculos);
+        vehiculos.remove(vehiculo);
     }
     
     public  int calcularTotalPeajes(){
         int totalPeajes =0;
-        for (Object vehiculo : vehiculos){
+        for (Vehiculo vehiculo : vehiculos){
             if (vehiculo instanceof Carro){
-              totalPeajes +=Carro.valorPeaje;
-            }else{
-                if(vehiculo instanceof Moto){
-                    totalPeajes +=Moto.valorPeaje;
-                }else if(vehiculo instanceof Camion){
+              totalPeajes +=((Carro) vehiculo).getValorPeaje();
+            }else if(vehiculo instanceof Moto){
+                    totalPeajes +=((Moto) vehiculo).getValorPeaje();
+            }else if(vehiculo instanceof Camion){
                     Camion camion =(Camion) vehiculo;
                    totalPeajes += camion.numeroEjes * camion.getValorPeajeEje();
                 }
                 
-            }
+            
         }
         return totalPeajes;
     }

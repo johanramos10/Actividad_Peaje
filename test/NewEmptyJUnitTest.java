@@ -48,6 +48,7 @@ public class NewEmptyJUnitTest {
         persona1.desasignarVehiculo(carro1);
         assertEquals(0, persona1.vehiculos.size());
     }
+    
 @Test
     public void testCalcularTotalPeaje() {
         // You may rename this method to better suit the purpose of your test case
@@ -61,20 +62,20 @@ public class NewEmptyJUnitTest {
         assertEquals(25000, persona2.calcularTotalPeajes());
     }
     
-    @Test void obtenerTartifaCarro(){
+    @Test public void obtenerTartifaCarro(){
         assertEquals(10000, carro1.getValorPeaje());
     }
     
-    @Test void obtenerTartifaMoto(){
+    @Test public void obtenerTartifaMoto(){
         assertEquals(5000, moto1.getValorPeaje());
     }
     
-    @Test void obtenerTartifaCamion(){
+    @Test public void obtenerTartifaCamion(){
         assertEquals(5000, camion1.getValorPeajeEje());
     }
      
     
-    @Test void obtenerNumeroDeEjesCamion(){
+    @Test public void obtenerNumeroDeEjesCamion(){
         assertEquals(3, camion1.getNumeroEjes());
     }
     // TODO add test methods here.

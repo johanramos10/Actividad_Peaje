@@ -14,12 +14,7 @@ public class Camion extends Vehiculo {
     private static int valorPeajeEje = 5000;
     // Atributo que identifica el número de ejes que tiene un camión
     public int numeroEjes;
-    /**
-    * Constructor de la clase Camión
-    * @param placa Parámetro que define la placa de un camión
-    * @param númeroEjes Parámetro que define el número de ejes de
-    * un camión
-    */
+    
    public Camion(String placa, int numeroEjes) {
         super(placa); // Invoca al constructor de la clase padre
         this.numeroEjes = numeroEjes;

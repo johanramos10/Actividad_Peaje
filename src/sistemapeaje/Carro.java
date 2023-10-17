@@ -11,7 +11,7 @@ package sistemapeaje;
  */
 public class Carro extends Vehiculo {
     // Atributo estático que identifica el valor de peaje a pagar por un carro
-    public static int valorPeaje = 10000;
+   public static int valorPeaje = 10000;
     /**
     * Constructor de la clase Carro
     * @param placa Parámetro que define la placa de un carro
